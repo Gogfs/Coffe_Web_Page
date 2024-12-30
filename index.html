@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./img/logo.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Code Coffe</title>
+</head>
+
+<body>
+    <div class="video-box">
+        <video src="./videos/coffe.mp4" loop muted autoplay></video>
+        <div class="mask-video"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a href="#">
+                <img src="./img/logo.png" alt="coffe-logo">
+            </a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#about-box">About</a>
+                <a href="#" onclick="openModal()">Adress</a>
+            </nav>
+
+        </section>
+    </header>
+
+    <section class="main-box">
+        <div>
+            <h3>Relax with the best coffe of the region</h3>
+            <p>Welcome to our coffee shop, a perfect haven for those who appreciate the unique taste of quality coffee
+                and a cozy atmosphere. Here, each cup is a carefully prepared experience, with selected beans and
+                special methods that guarantee an impeccable taste.</p>
+            <a href="" class="main-box-link">buy your now</a>
+        </div>
+    </section>
+
+    <section id="about-box" class="about-box">
+        <h2 class="title"><span>About</span> us</h2>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./img/about-img.jpeg" alt="">
+            </div>
+
+            <div class="about-text">
+                <h3>What make our coffe special</h3>
+
+                <p>At our coffee shop, a passion for quality coffee meets a welcoming and relaxed atmosphere. We are
+                    committed to offering our customers a unique experience, from the selected bean to the cup served
+                    with care. We work with local producers and preparation methods that guarantee a fresh and authentic
+                    taste. </p>
+
+                <p>In addition to the coffee, we offer a selection of delicacies to accompany it, all prepared with
+                    fresh and carefully chosen ingredients. Whether for a quick breakfast or a relaxing break in the
+                    middle of the day, our space is designed to make you feel at home.</p>
+
+                <a href="" class="main-box-link">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <h3 class="title"><span>Our</span> Adress</h3>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14817.298231647992!2d-49.61973215051674!3d-21.806387430712434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be467589002709%3A0x54c03e662abc324e!2sCafel%C3%A2ndia%2C%20SP%2C%2016500-000!5e0!3m2!1spt-BR!2sbr!4v1735561630791!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mask-modal" onclick="closeModal()"></div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
