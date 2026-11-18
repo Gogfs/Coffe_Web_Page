@@ -78,6 +78,34 @@ section {
     padding-bottom: 0.5rem;
 }
 
+.footer {
+    background-color: var(--bg);
+    width: 99vw;
+    border-top: solid #d3ad7f;
+}
+
+.footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 3rem 0;
+}
+
+.footer section nav a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: white;
+    transition: 0.3s linear;
+}
+
+.footer section nav a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
 .main-box {
     min-height: 100vh;
     display: flex;
