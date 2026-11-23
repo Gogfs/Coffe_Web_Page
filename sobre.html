@@ -5,18 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="./img/logo.png" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>Code Coffe</title>
+
+    <style>
+        .mask-video {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.8) 50%, rgba(10, 12, 16, 0.99) 85%);
+        }
+
+        .main-box {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-box div {
+            max-width: 90rem;
+        }
+
+        .main-box div h3 {
+            color: white;
+            font-size: 6rem;
+            text-transform: uppercase;
+        }
+
+        .main-box div p {
+            font-size: 2rem;
+            color: white;
+            font-weight: 400;
+            padding: 1rem 0;
+            line-height: 1.8;
+        }
+    </style>
 </head>
 
 <body>
     <div class="video-box">
-        <video src="./videos/coffe.mp4" loop muted autoplay></video>
+        <img src="img/cafeteria.jpeg">
         <div class="mask-video"></div>
     </div>
 
@@ -31,7 +65,7 @@
                 <a href="#">Sobre</a>
                 <a href="#" onclick="openModal()">Endereço</a>
                 <a href="#">Cardápio</a>
-                <a href="#">Clube Coffe</a>
+                <a href="cadastro.php">Clube Coffe</a>
             </nav>
 
         </section>
@@ -39,14 +73,12 @@
 
     <section class="main-box">
         <div>
-            <h3>Relaxe com o melhor café da região</h3>
-            <p>Bem vindo à nossca cafeteria, o ambiente perfeito para
-                aqueles que a preciam o sabor único de qualidade do 
-                café em uma atmosfera reconfortante. Aqui, cada copo é
-                uma experiência cuidadosamente preparada, com grãos 
-                selecionados e métodos especiais que garantem um sabor
-                impecável.</p>
-            <a href="" class="main-box-link">Nosso cardápio</a>
+            <h3>Uma história de tradição, sabor e paixão pelo <span style="color: var(--main-color);">café</span>.</h3>
+            <p>
+                Nossa história começou no início do século XX, quando uma família apaixonada pela arte de receber e pela boa gastronomia
+                decidiu transformar seu talento em um pequeno negócio. O que nasceu como um simples estabelecimento familiar, movido pelo
+                carinho, pela dedicação e pelo desejo de oferecer momentos especiais, tornou-se uma tradição que atravessa gerações.
+            </p>
         </div>
     </section>
 
@@ -95,7 +127,7 @@
                 <a href="#">Sobre</a>
                 <a href="#" onclick="openModal()">Endereço</a>
                 <a href="#">Cardápio</a>
-                <a href="#">Clube Coffe</a>
+                <a href="cadastro.php">Clube Coffe</a>
             </nav>
 
             <a href="index.html">
