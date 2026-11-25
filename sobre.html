@@ -45,6 +45,41 @@
             padding: 1rem 0;
             line-height: 1.8;
         }
+
+        .about-box .about-container {
+            display: flex;
+            align-items: center;
+            background: var(--main-color);
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            border-radius: 20px;
+        }
+
+        .about-box .about-container .about-img{
+            flex: 1 1 45rem;
+        }
+
+        .about-box .about-container .about-img img{
+            width: 100%;
+        }
+
+        .about-box .about-container .about-text {
+            flex: 1 1 45rem;
+            padding: 2rem;
+        }
+
+        .about-box .about-container .about-text h3 {
+            font-size: 3rem;
+            color: white;
+        }
+
+        .about-box .about-container .about-text p {
+            font-size: 2rem;
+            font-weight: 500;
+            color: black;
+            line-height: 1.8;
+            padding: 1rem 0;
+        }
     </style>
 </head>
 
@@ -64,7 +99,7 @@
                 <a href="index.html">Home</a>
                 <a href="#">Sobre</a>
                 <a href="#" onclick="openModal()">Endereço</a>
-                <a href="#">Cardápio</a>
+                <a href="cardapio.html">Cardápio</a>
                 <a href="cadastro.php">Clube Coffe</a>
             </nav>
 
@@ -83,28 +118,23 @@
     </section>
 
     <section id="about-box" class="about-box">
-        <h2 class="title"><span>Sobre</span> Nós</h2>
+        <h2 class="title">O que torna nosso <span>café</span> especial</h2>
         <div class="about-container">
-            <div class="about-img">
-                <img src="./img/about-img.jpeg" alt="">
+            <div class="about-text">
+                <p>
+                    Acreditamos que os melhores sabores são aqueles preparados com tempo, cuidado e ingredientes de qualidade. As primeiras receitas,
+                    desenvolvidas e aperfeiçoadas dentro da própria família, conquistaram clientes pelo sabor único e pelo toque artesanal.
+                </p>
+
+                <p>
+                    Hoje, seguimos honrando nossas origens e levando adiante o legado da família que iniciou tudo. Unimos o conhecimento construído ao longo 
+                    de décadas com novas ideias, mantendo sempre o respeito pela tradição e a paixão pelo trabalho artesanal.
+                </p>
+
             </div>
 
-            <div class="about-text">
-                <h3>O que torna nosso café especial</h3>
-
-                <p>
-                    Em nossa cafeteria, a paixão pelo café de qualidade se une a um ambiente acolhedor e descontraído. Estamos
-                    comprometidos em oferecer aos nossos clientes uma experiência única, desde o grão selecionado até a xícara servida
-                    com carinho. Trabalhamos com produtores locais e métodos de preparo que garantem um sabor fresco e autêntico.
-                </p>
-
-                <p>
-                    Além do café, oferecemos uma seleção de iguarias para acompanhá-lo, todas preparadas com
-                    ingredientes frescos e cuidadosamente selecionados. Seja para um café da manhã rápido ou para uma pausa relaxante no
-                    meio do dia, nosso espaço foi projetado para que você se sinta em casa.
-                </p>
-
-                <a href="" class="main-box-link">Conheça nossa história</a>
+            <div class="about-img">
+                <img src="./img/about-img.jpeg" alt="">
             </div>
         </div>
     </section>
@@ -126,7 +156,7 @@
                 <a href="index.html">Home</a>
                 <a href="#">Sobre</a>
                 <a href="#" onclick="openModal()">Endereço</a>
-                <a href="#">Cardápio</a>
+                <a href="cardapio.html">Cardápio</a>
                 <a href="cadastro.php">Clube Coffe</a>
             </nav>
 
