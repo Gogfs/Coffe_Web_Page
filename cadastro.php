@@ -15,8 +15,11 @@
 
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             background: linear-gradient(90deg,#303030 0%,#0A0C10 100%);
-            text-align: center;
         }
 
          .main-box div {
@@ -24,7 +27,7 @@
         }
 
         .main-box {
-            min-height: 70vh;
+            min-height: 45vh;
             display: flex;
             align-items: center;
         }
@@ -56,12 +59,40 @@
             height: 117px;
         }
 
-        .formulario {
+        .form-box {
             width: 714px;
             height: 773px;
             background-color: black;
             border: 2px solid #D3AD7F;
             border-bottom: solid #000000;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding: 50px;
+            gap: 80px;
+        }
+
+        .form div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .form label {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .form input{
+            width: 568px;
+            height: 40px;
+            background-color: black;
+            border: solid #D3AD7F;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -90,16 +121,24 @@
         </div>
     </section>
 
-    <div class="formulario">
-        <form action="">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="">
+    <div class="form-box">
+        <form action="" class="form">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="">
+            </div>
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="">
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="">
+            </div>
 
-            <label for="data_nasc">Data de nascimento</label>
-            <input type="date" name="data_nasc" id="">
+            <div>
+                <label for="data_nasc">Data de nascimento</label>
+                <input type="date" name="data_nasc" id="">
+            </div>
+
+            <button type="submit" class="main-box-link">Cadastrar</button>
         </form>
     </div>
 

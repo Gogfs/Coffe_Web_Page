@@ -116,6 +116,7 @@ section {
     margin-top: 2rem;
     display: inline-block;
     font-size: 1.7rem;
+    font-weight: bold;
     color: white;
     padding: 1rem 3rem;
     border: none;
@@ -198,7 +199,7 @@ section {
 
 .footer {
     background-color: var(--bg);
-    width: 99vw;
+    width: 100%;
     border-top: solid #d3ad7f;
 }
 
