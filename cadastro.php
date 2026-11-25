@@ -12,16 +12,64 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>Code Coffe</title>
+
+    <style>
+        body {
+            background: linear-gradient(90deg,#303030 0%,#0A0C10 100%);
+            text-align: center;
+        }
+
+         .main-box div {
+            max-width: 80rem;
+        }
+
+        .main-box {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            margin-bottom: 100px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            font-size: 1.5rem;
+            text-align: center;
+            width: 238px;
+            height: 276px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border-left: 12px solid #D3AD7F;
+        }
+
+        .item img {
+            width: 100%;
+            height: 117px;
+        }
+
+        .formulario {
+            width: 714px;
+            height: 773px;
+            background-color: black;
+            border: 2px solid #D3AD7F;
+            border-bottom: solid #000000;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="video-box">
-        <div class="mask-video"></div>
-    </div>
-
     <header class="header">
         <section>
-            <a href="index.html">
+            <a href="#">
                 <img src="./img/logo.png" alt="coffe-logo">
             </a>
 
@@ -29,8 +77,8 @@
                 <a href="index.html">Home</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="#" onclick="openModal()">Endereço</a>
-                <a href="#">Cardápio</a>
-                <a href="#">Clube Coffe</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cadastro.php">Clube Coffe</a>
             </nav>
 
         </section>
@@ -38,43 +86,24 @@
 
     <section class="main-box">
         <div>
-            <h3>Relaxe com o melhor café da região</h3>
-            <p>Bem vindo à nossca cafeteria, o ambiente perfeito para
-                aqueles que a preciam o sabor único de qualidade do 
-                café em uma atmosfera reconfortante. Aqui, cada copo é
-                uma experiência cuidadosamente preparada, com grãos 
-                selecionados e métodos especiais que garantem um sabor
-                impecável.</p>
-            <a href="" class="main-box-link">Nosso cardápio</a>
+            <h3>Faça parte do clube</h3>
         </div>
     </section>
 
-    <section id="about-box" class="about-box">
-        <h2 class="title"><span>Sobre</span> Nós</h2>
-        <div class="about-container">
-            <div class="about-img">
-                <img src="./img/about-img.jpeg" alt="">
-            </div>
+    <div class="formulario">
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="">
 
-            <div class="about-text">
-                <h3>O que torna nosso café especial</h3>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="">
 
-                <p>
-                    Em nossa cafeteria, a paixão pelo café de qualidade se une a um ambiente acolhedor e descontraído. Estamos
-                    comprometidos em oferecer aos nossos clientes uma experiência única, desde o grão selecionado até a xícara servida
-                    com carinho. Trabalhamos com produtores locais e métodos de preparo que garantem um sabor fresco e autêntico.
-                </p>
+            <label for="data_nasc">Data de nascimento</label>
+            <input type="date" name="data_nasc" id="">
+        </form>
+    </div>
 
-                <p>
-                    Além do café, oferecemos uma seleção de iguarias para acompanhá-lo, todas preparadas com
-                    ingredientes frescos e cuidadosamente selecionados. Seja para um café da manhã rápido ou para uma pausa relaxante no
-                    meio do dia, nosso espaço foi projetado para que você se sinta em casa.
-                </p>
-
-                <a href="" class="main-box-link">Conheça nossa história</a>
-            </div>
-        </div>
-    </section>
+    
 
     <div class="modal">
         <h3 class="title"><span>Nosso</span> Endereço</h3>
@@ -91,13 +120,13 @@
         <section>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="sobre.html">Sobre</a>
+                <a href="#about-box">Sobre</a>
                 <a href="#" onclick="openModal()">Endereço</a>
-                <a href="#">Cardápio</a>
-                <a href="#">Clube Coffe</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cadastro.php">Clube Coffe</a>
             </nav>
 
-            <a href="index.html">
+            <a href="#">
                 <img src="./img/logo.png" alt="coffe-logo">
             </a>
         </section>
